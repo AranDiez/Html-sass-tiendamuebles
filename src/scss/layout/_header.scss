@@ -1,0 +1,111 @@
+.header {
+  background-image: url(../images/header.jpg);
+  background-size: auto;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.header__section1 {
+  display: flex;
+  align-items: center;
+  // position: fixed;
+  width: 100vw;
+}
+.header__section1--navmenu {
+  position: fixed;
+}
+.header__section1--menulinks {
+  display: none;
+}
+
+.header__section1--menulink {
+  color: var(--darkblue-color);
+}
+
+.header__section1--menu {
+  height: 24px;
+  width: 24px;
+  margin-left: 10vw;
+}
+
+.header__section1--logo {
+  margin: 19px auto;
+}
+
+.header__section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__section2--title {
+  font-family: "Poppins", sans-serif;
+  color: var(--darkblue-color);
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 30vh 0 0 0;
+  text-align: center;
+}
+
+.header__section2--button {
+  background-color: var(--darkblue-color);
+  color: var(--white-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  height: 48px;
+  width: 176px;
+  padding: 12px 24px 12px 24px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.header__section2--button:hover {
+  background-color: var(--orange-color);
+  color: var(--darkblue-color);
+  transition: color ease 2s;
+  font-size: 1.063rem;
+}
+@media (min-width: 768px) {
+  .header__section2 {
+    align-items: flex-start;
+    margin-left: 10%;
+  }
+  .header__section2--title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-align: left;
+    width: 400px;
+  }
+
+  .header__section2--button {
+    margin-top: 12px;
+  }
+}
+
+@media (min-width: 980px) {
+  .header__section1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header__section1--menu {
+    display: none;
+  }
+
+  .header__section1--menulinks {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    margin-left: 30px;
+    width: 97px;
+    height: 23px;
+    flex-grow: 0;
+    font-family: "Poppins", sans-serif;
+    color: var(--darkblue-color);
+    font-size: 1rem;
+  }
+}
