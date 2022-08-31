@@ -10,28 +10,30 @@
 .header__section1 {
   display: flex;
   align-items: center;
-  // position: fixed;
   width: 100vw;
+  flex-direction: column;
 }
 .header__section1--navmenu {
   position: fixed;
 }
 .header__section1--menulinks {
-  display: none;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  font-family: 'Poppins', sans-serif;
+  margin: 30px;
+  padding: 30px;
+  color: var(--darkblue-color);
+  font-size: 1rem;
+  background-color: rgba(220, 216, 207, 0.9);
 }
 
 .header__section1--menulink {
   color: var(--darkblue-color);
 }
 
-.header__section1--menu {
-  height: 24px;
-  width: 24px;
-  margin-left: 10vw;
-}
-
 .header__section1--logo {
-  margin: 19px auto;
+  margin: 120px auto 0px auto;
 }
 
 .header__section2 {
@@ -41,24 +43,24 @@
 }
 
 .header__section2--title {
-  font-family: "Poppins", sans-serif;
+  background-color: rgba(240, 240, 240, 0.3);
+  font-family: 'Poppins', sans-serif;
   color: var(--darkblue-color);
   font-weight: 600;
   font-size: 1.5rem;
   margin: 30vh 0 0 0;
+  padding: 10px 30px;
   text-align: center;
 }
 
 .header__section2--button {
   background-color: var(--darkblue-color);
   color: var(--white-color);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 1rem;
-  height: 48px;
-  width: 176px;
-  padding: 12px 24px 12px 24px;
-  margin-top: 24px;
+  padding: 12px 24px;
+  margin-top: 1.5rem;
   display: flex;
   justify-content: center;
 }
@@ -70,6 +72,17 @@
   font-size: 1.063rem;
 }
 @media (min-width: 768px) {
+  .header__section1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .header__section1--navmenu {
+    position: fixed;
+  }
+  .header__section1--logo {
+    margin: 50px auto 0px auto;
+    position: static;
+  }
   .header__section2 {
     align-items: flex-start;
     margin-left: 10%;
@@ -79,33 +92,9 @@
     font-weight: 600;
     text-align: left;
     width: 400px;
+    padding: 10px 30px;
   }
-
   .header__section2--button {
-    margin-top: 12px;
-  }
-}
-
-@media (min-width: 980px) {
-  .header__section1 {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .header__section1--menu {
-    display: none;
-  }
-
-  .header__section1--menulinks {
-    display: flex;
-    align-items: center;
-    column-gap: 30px;
-    margin-left: 30px;
-    width: 97px;
-    height: 23px;
-    flex-grow: 0;
-    font-family: "Poppins", sans-serif;
-    color: var(--darkblue-color);
-    font-size: 1rem;
+    margin-top: 0.75rem;
   }
 }

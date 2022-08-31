@@ -1,6 +1,6 @@
 .main__module2 {
   background-color: var(--orange-color);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   color: var(--white-color);
   display: grid;
@@ -13,14 +13,13 @@
 
 .main__module2--title {
   height: 41px;
-  margin: 10px 0 0;
+  margin: 10px 0 0 0;
   font-size: 1.5rem;
   font-weight: 600;
 }
 
 .main__module2--text {
   height: 31px;
-  margin: 0px 27px 5px 12px;
   font-size: 1rem;
 }
 
@@ -30,7 +29,7 @@
   font-size: 1rem;
   font-weight: 600;
   text-decoration: underline;
-  margin: 5px auto 47px auto;
+  margin-bottom: 30px;
   padding: 24px 21px;
   display: flex;
 
@@ -39,5 +38,5 @@
 }
 
 .main__module2--button:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
